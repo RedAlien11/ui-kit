@@ -1,5 +1,7 @@
 import styled, { keyframes, DefaultTheme } from "styled-components";
 import { MENU_ENTRY_HEIGHT } from "./config";
+import { Text } from "../../components/Text";
+import { Colors } from "../../theme/types";
 
 export interface Props {
   secondary?: boolean;
@@ -23,6 +25,7 @@ const LinkLabel = styled.div<{ isPushed: boolean }>`
   transition: color 0.4s;
   flex-grow: 1;
 `;
+
 
 const MenuEntry = styled.div<Props>`
   cursor: pointer;
@@ -66,10 +69,22 @@ const MenuEntry = styled.div<Props>`
     font-weight: bold;
   }
 `;
+
+const LinkStatus = styled(Text)<{ color: keyof Colors }>`
+  border-radius: ${({ theme }) => theme.radii.default};
+  padding: 0 8px;
+  border: 2px solid;
+  border-color: ${({ theme, color }) => theme.colors[color]};
+  box-shadow: none;
+  color: ${({ theme, color }) => theme.colors[color]};
+  margin-left: 8px;
+`;
+
+
 MenuEntry.defaultProps = {
   secondary: false,
   isActive: false,
   role: "button",
 };
 
-export { MenuEntry, LinkLabel };
+export { MenuEntry, LinkLabel, LinkStatus };

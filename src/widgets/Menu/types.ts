@@ -1,4 +1,5 @@
 import { Login } from "../WalletModal/types";
+import { Colors } from "../../theme/types";
 
 export interface LangType {
   code: string;
@@ -23,10 +24,16 @@ export interface NavTheme {
   hover: string;
 }
 
+export interface LinkStatus {
+  text: string;
+  color: keyof Colors;
+}
+
 export interface MenuSubEntry {
   label: string;
   href: string;
   calloutClass?: string;
+  status?: LinkStatus;
 }
 
 export interface MenuEntry {
@@ -37,6 +44,7 @@ export interface MenuEntry {
   calloutClass?: string;
   initialOpenState?: boolean;
   disabled?:boolean;
+  status?: LinkStatus;
 }
 
 export interface PanelProps {

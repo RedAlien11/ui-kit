@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 import { SvgProps } from "../../components/Svg";
 import * as IconModule from "./icons";
 import Accordion from "./Accordion";
-import { MenuEntry, LinkLabel } from "./MenuEntry";
+import { MenuEntry, LinkLabel, LinkStatus } from "./MenuEntry";
 import MenuLink from "./MenuLink";
 import { PanelProps, PushedProps } from "./types";
 
@@ -36,6 +36,9 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
         const calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
 
         if (entry.items) {
+          const itemsMatchIndex = entry.items.findIndex((item) => item.href === location.pathname);
+          const initialOpenState = entry.initialOpenState === true ? entry.initialOpenState : itemsMatchIndex >= 0;
+
           return (
             <Accordion
               key={entry.label}
@@ -43,30 +46,44 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
               pushNav={pushNav}
               icon={iconElement}
               label={entry.label}
-              initialOpenState={entry.initialOpenState}
+              status={entry.status}
+              initialOpenState={initialOpenState}
               className={calloutClass}
+              isActive={entry.items.some((item) => item.href === location.pathname)}
             >
               {isPushed &&
-                entry.items.map((item) => (
-                  <MenuEntry key={item.href} secondary isActive={item.href === location.pathname} onClick={handleClick}>
-                    <MenuLink href={item.href}>{item.label}</MenuLink>
-                  </MenuEntry>
-                ))}
+              entry.items.map((item) => (
+                <MenuEntry disabled={entry.disabled} key={item.href} secondary isActive={item.href === location.pathname} onClick={handleClick}>
+                  <MenuLink href={item.href}>
+                    <LinkLabel isPushed={isPushed}>{item.label}</LinkLabel>
+                    {item.status && (
+                      <LinkStatus color={item.status.color} fontSize="14px">
+                        {item.status.text}
+                      </LinkStatus>
+                    )}
+                  </MenuLink>
+                </MenuEntry>
+              ))}
             </Accordion>
           );
         }
         return (
-          <MenuEntry key={entry.label} disabled={entry.disabled} isActive={entry.href === location.pathname} className={calloutClass}>
+          <MenuEntry  disabled={entry.disabled} key={entry.label} isActive={entry.href === location.pathname} className={calloutClass}>
             <MenuLink href={entry.href} onClick={handleClick}>
               {iconElement}
               <LinkLabel isPushed={isPushed}>{entry.label}</LinkLabel>
+              {entry.status && (
+                <LinkStatus color={entry.status.color} fontSize="14px">
+                  {entry.status.text}
+                </LinkStatus>
+              )}
             </MenuLink>
           </MenuEntry>
         );
       })}
     </Container>
       {/* eslint-disable-next-line jsx-a11y/alt-text,jsx-a11y/control-has-associated-label */}
-      {/* <a href="https://rugdoc.io/project/pfre-finance/"><img src="/images/rugdoc-review.png" /></a> */}
+      {/* <a href="https://rugdoc.io/project/ham-finance/"><img src="/images/rugdoc-review.png" /></a> */}
     </>
   );
 };

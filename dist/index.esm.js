@@ -734,7 +734,7 @@ var Icon$M = function (props) {
 
 var Icon$N = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 90 90" }, props),
-        React.createElement("image", { width: 90, height: 90, href: "/images/pfre/9.png" })));
+        React.createElement("image", { width: 90, height: 90, href: "/images/ham/9.png" })));
 };
 
 var Icon$O = function (props) {
@@ -1208,7 +1208,7 @@ var getBoxShadow = function (_a) {
     }
     return theme.card.boxShadow;
 };
-var StyledCard = styled.div(templateObject_1$a || (templateObject_1$a = __makeTemplateObject(["\n  background-color: ", ";\n  border: ", ";\n  border-radius: 16px;\n  box-shadow: ", ";\n  color: ", ";\n  overflow: hidden;\n  position: relative;\n\n  ", "\n"], ["\n  background-color: ", ";\n  border: ", ";\n  border-radius: 16px;\n  box-shadow: ", ";\n  color: ", ";\n  overflow: hidden;\n  position: relative;\n\n  ", "\n"])), function (_a) {
+var StyledCard = styled.div(templateObject_1$a || (templateObject_1$a = __makeTemplateObject(["\n  background-color: ", ";\n  border: ", ";\n  border-radius: 16px;\n  opacity: 0.9;\n  box-shadow: ", ";\n  color: ", ";\n  overflow: hidden;\n  position: relative;\n\n  ", "\n"], ["\n  background-color: ", ";\n  border: ", ";\n  border-radius: 16px;\n  opacity: 0.9;\n  box-shadow: ", ";\n  color: ", ";\n  overflow: hidden;\n  position: relative;\n\n  ", "\n"])), function (_a) {
     var theme = _a.theme;
     return theme.card.background;
 }, function (_a) {
@@ -1762,7 +1762,7 @@ var Progress = function (_a) {
 var rotate$1 = keyframes(templateObject_1$y || (templateObject_1$y = __makeTemplateObject(["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"], ["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"])));
 var SpinnerIcon = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
-        React.createElement("image", { width: "96", height: "96", href: "/images/pfre/9.png" })));
+        React.createElement("image", { width: "96", height: "96", href: "/images/ham/9.png" })));
 };
 var Container$1 = styled.div(templateObject_2$7 || (templateObject_2$7 = __makeTemplateObject(["\n  position: relative;\n"], ["\n  position: relative;\n"])));
 var RotatingPancakeIcon = styled(SpinnerIcon)(templateObject_3$2 || (templateObject_3$2 = __makeTemplateObject(["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s linear infinite;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s linear infinite;\n  transform: translate3d(0, 0, 0);\n"])), rotate$1);
@@ -2461,11 +2461,11 @@ var useParticleBurst = function (options) {
 };
 
 var baseColors = {
-    failure: "#ED4B9E",
-    primary: "#00e676",
-    primaryBright: "#66ffa6",
-    primaryDark: "#00b248",
-    secondary: "#ffea00",
+    failure: "#ff1744",
+    primary: "#f44336",
+    primaryBright: "#ff7961",
+    primaryDark: "#ba000d",
+    secondary: "#d84315",
     success: "#31D0AA",
     warning: "#FFB237",
 };
@@ -2476,9 +2476,9 @@ var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { ba
         bubblegum: "linear-gradient(139.73deg,#f7e9cf 0%,#b7b7b7 100%)",
         cardHeader: "linear-gradient(111.68deg, #F2ECF2 0%, #E8F2F6 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#00bfa5", background: "#343135", backgroundAlt: "#27262c", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f5a", primaryDark: "#0098A1", inputSecondary: "#262130", tertiary: "#353547", text: "#fcf2e2", textDisabled: "#666171", textSubtle: "#d4d1c4", borderColor: "#524B63", card: "#27262c", gradients: {
-        bubblegum: "linear-gradient(139.73deg,#6d6d6d 0%,#343135 100%)",
-        cardHeader: "linear-gradient(166.77deg, #3B4155 0%, #3A3045 100%)",
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#d84315", background: "#343135", backgroundAlt: "#27262c", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f5a", primaryDark: "#0098A1", inputSecondary: "#262130", tertiary: "#353547", text: "#fcf2e2", textDisabled: "#666171", textSubtle: "#d4d1c4", borderColor: "#524B63", card: "#27262c", gradients: {
+        bubblegum: "linear-gradient(139.73deg,#f48fb1 0%,#ad1457 100%)",
+        cardHeader: "linear-gradient(166.77deg, #f48fb1 0%, #ad1457 100%)",
     } });
 
 var light = {
@@ -2877,7 +2877,7 @@ var Icon$1n = function (props) {
 var Logo = function (_a) {
     var isDark = _a.isDark, props = __rest(_a, ["isDark"]);
     return (React.createElement(Svg, __assign({ viewBox: "0 0 205 26" }, props),
-        React.createElement("image", { width: "205", height: "26", href: isDark ? '/images/pfre/LogoTextNewDark.png' : '/images/pfre/LogoTextNewWhite.png' })));
+        React.createElement("image", { width: "205", height: "26", href: isDark ? '/images/ham/LogoTextNewDark.png' : '/images/ham/LogoTextNewWhite.png' })));
 };
 
 var Icon$1o = function (props) {
@@ -3098,13 +3098,13 @@ var StyledLink$1 = styled(Link$1)(templateObject_1$I || (templateObject_1$I = __
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 });
-var Title = styled.h1(templateObject_2$e || (templateObject_2$e = __makeTemplateObject(["\n  font-size: 16px;\n  font-family: 'Kanit';\n\n\n  /* Fallback: Set a background color. */\n  background-color: #CA4246;\n  \n  /* Create the gradient. */\n   background-image: linear-gradient(\n        45deg,\n        #689f38 16.666%, \n        #558b2f 16.666%, \n        #33691e 33.333%, \n        #388e3c 33.333%, \n        #2e7d32 50%, \n        #1b5e20 50%, \n        #76ff03 66.666%, \n        #32cb00 66.666%, \n        #00e676 83.333%, \n        #00b248 83.333%);\n  \n  /* Set the background size and repeat properties. */\n  background-size: 100%;\n  background-repeat: repeat;\n\n  /* Use the text as a mask for the background. */\n  /* This will show the gradient as a text color rather than element bg. */\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent; \n  \n  /* Animate the text when loading the element. */\n    /* This animates it on page load and when hovering out. */\n    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;\n\n&:hover{\n    animation: rainbow-text-simple-animation 0.5s ease-in forwards;\n}\n\n\n/* Move the background and make it smaller. */\n/* Animation shown when entering the page and after the hover animation. */\n@keyframes rainbow-text-simple-animation-rev {\n    0% {\n        background-size: 650%;\n    }\n    40% {\n        background-size: 650%;\n    }\n    100% {\n        background-size: 100%;\n    }\n}\n\n/* Move the background and make it larger. */\n/* Animation shown when hovering over the text. */\n@keyframes rainbow-text-simple-animation {\n    0% {\n        background-size: 100%;\n    }\n    80% {\n        background-size: 650%;\n    }\n    100% {\n        background-size: 650%;\n    }\n}\n\n"], ["\n  font-size: 16px;\n  font-family: 'Kanit';\n\n\n  /* Fallback: Set a background color. */\n  background-color: #CA4246;\n  \n  /* Create the gradient. */\n   background-image: linear-gradient(\n        45deg,\n        #689f38 16.666%, \n        #558b2f 16.666%, \n        #33691e 33.333%, \n        #388e3c 33.333%, \n        #2e7d32 50%, \n        #1b5e20 50%, \n        #76ff03 66.666%, \n        #32cb00 66.666%, \n        #00e676 83.333%, \n        #00b248 83.333%);\n  \n  /* Set the background size and repeat properties. */\n  background-size: 100%;\n  background-repeat: repeat;\n\n  /* Use the text as a mask for the background. */\n  /* This will show the gradient as a text color rather than element bg. */\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent; \n  \n  /* Animate the text when loading the element. */\n    /* This animates it on page load and when hovering out. */\n    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;\n\n&:hover{\n    animation: rainbow-text-simple-animation 0.5s ease-in forwards;\n}\n\n\n/* Move the background and make it smaller. */\n/* Animation shown when entering the page and after the hover animation. */\n@keyframes rainbow-text-simple-animation-rev {\n    0% {\n        background-size: 650%;\n    }\n    40% {\n        background-size: 650%;\n    }\n    100% {\n        background-size: 100%;\n    }\n}\n\n/* Move the background and make it larger. */\n/* Animation shown when hovering over the text. */\n@keyframes rainbow-text-simple-animation {\n    0% {\n        background-size: 100%;\n    }\n    80% {\n        background-size: 650%;\n    }\n    100% {\n        background-size: 650%;\n    }\n}\n\n"])));
+var Title = styled.h1(templateObject_2$e || (templateObject_2$e = __makeTemplateObject(["\n  font-size: 16px;\n  font-family: 'Kanit';\n\n\n  /* Fallback: Set a background color. */\n  background-color: #CA4246;\n  \n  /* Create the gradient. */\n   background-image: linear-gradient(\n        45deg,\n        #f44336 16.666%, \n        #ef5350 16.666%, \n        #c62828 33.333%, \n        #ff5f52 33.333%, \n        #8e0000 50%, \n        #ff5f52 50%, \n        #ff1744 66.666%, \n        #ff5131 66.666%, \n        #9b0000 83.333%, \n        #f05545 83.333%);\n  \n  /* Set the background size and repeat properties. */\n  background-size: 100%;\n  background-repeat: repeat;\n\n  /* Use the text as a mask for the background. */\n  /* This will show the gradient as a text color rather than element bg. */\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent; \n  \n  /* Animate the text when loading the element. */\n    /* This animates it on page load and when hovering out. */\n    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;\n\n&:hover{\n    animation: rainbow-text-simple-animation 0.5s ease-in forwards;\n}\n\n\n/* Move the background and make it smaller. */\n/* Animation shown when entering the page and after the hover animation. */\n@keyframes rainbow-text-simple-animation-rev {\n    0% {\n        background-size: 650%;\n    }\n    40% {\n        background-size: 650%;\n    }\n    100% {\n        background-size: 100%;\n    }\n}\n\n/* Move the background and make it larger. */\n/* Animation shown when hovering over the text. */\n@keyframes rainbow-text-simple-animation {\n    0% {\n        background-size: 100%;\n    }\n    80% {\n        background-size: 650%;\n    }\n    100% {\n        background-size: 650%;\n    }\n}\n\n"], ["\n  font-size: 16px;\n  font-family: 'Kanit';\n\n\n  /* Fallback: Set a background color. */\n  background-color: #CA4246;\n  \n  /* Create the gradient. */\n   background-image: linear-gradient(\n        45deg,\n        #f44336 16.666%, \n        #ef5350 16.666%, \n        #c62828 33.333%, \n        #ff5f52 33.333%, \n        #8e0000 50%, \n        #ff5f52 50%, \n        #ff1744 66.666%, \n        #ff5131 66.666%, \n        #9b0000 83.333%, \n        #f05545 83.333%);\n  \n  /* Set the background size and repeat properties. */\n  background-size: 100%;\n  background-repeat: repeat;\n\n  /* Use the text as a mask for the background. */\n  /* This will show the gradient as a text color rather than element bg. */\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent; \n  \n  /* Animate the text when loading the element. */\n    /* This animates it on page load and when hovering out. */\n    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;\n\n&:hover{\n    animation: rainbow-text-simple-animation 0.5s ease-in forwards;\n}\n\n\n/* Move the background and make it smaller. */\n/* Animation shown when entering the page and after the hover animation. */\n@keyframes rainbow-text-simple-animation-rev {\n    0% {\n        background-size: 650%;\n    }\n    40% {\n        background-size: 650%;\n    }\n    100% {\n        background-size: 100%;\n    }\n}\n\n/* Move the background and make it larger. */\n/* Animation shown when hovering over the text. */\n@keyframes rainbow-text-simple-animation {\n    0% {\n        background-size: 100%;\n    }\n    80% {\n        background-size: 650%;\n    }\n    100% {\n        background-size: 650%;\n    }\n}\n\n"])));
 var Logo$1 = function (_a) {
     var isPushed = _a.isPushed, togglePush = _a.togglePush; _a.isDark; var href = _a.href;
     var isAbsoluteUrl = href.startsWith("http");
     var innerLogo = (React.createElement(React.Fragment, null,
         React.createElement(Flex, { className: "desktop-icon" },
-            React.createElement(Title, null, "POLYFRENCHIE"))));
+            React.createElement(Title, null, "HAM"))));
     return (React.createElement(Flex, null,
         React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React.createElement(Icon$1j, { width: "24px", color: "textSubtle" })) : (React.createElement(Icon$1i, { width: "24px", color: "textSubtle" }))),
         isAbsoluteUrl ? (React.createElement(StyledLink$1, { as: "a", href: href, "aria-label": "Pancake home page" }, innerLogo)) : (React.createElement(StyledLink$1, { to: href, "aria-label": "Pancake home page" }, innerLogo))));
@@ -3163,7 +3163,7 @@ var links = [
             // },
             {
                 label: "Github",
-                href: "https://github.com/pfredefi/",
+                href: "https://github.com/hamdefi/",
             },
             {
                 label: "Docs",
@@ -3180,12 +3180,12 @@ var socials = [
     {
         label: "Telegram",
         icon: "TelegramIcon",
-        href: "https://t.me/polyfrenchiedefi",
+        href: "https://t.me/hamdefi1",
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/polyfrenchie",
+        href: "https://twitter.com/oinkdefi",
     },
 ];
 var MENU_HEIGHT = 64;
@@ -3224,15 +3224,25 @@ var MenuEntry = styled.div(templateObject_3$7 || (templateObject_3$7 = __makeTem
     var theme = _a.theme;
     return theme.colors.gradients.bubblegum;
 });
+var LinkStatus = styled(Text)(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  border-radius: ", ";\n  padding: 0 8px;\n  border: 2px solid;\n  border-color: ", ";\n  box-shadow: none;\n  color: ", ";\n  margin-left: 8px;\n"], ["\n  border-radius: ", ";\n  padding: 0 8px;\n  border: 2px solid;\n  border-color: ", ";\n  box-shadow: none;\n  color: ", ";\n  margin-left: 8px;\n"])), function (_a) {
+    var theme = _a.theme;
+    return theme.radii.default;
+}, function (_a) {
+    var theme = _a.theme, color = _a.color;
+    return theme.colors[color];
+}, function (_a) {
+    var theme = _a.theme, color = _a.color;
+    return theme.colors[color];
+});
 MenuEntry.defaultProps = {
     secondary: false,
     isActive: false,
     role: "button",
 };
-var templateObject_1$J, templateObject_2$f, templateObject_3$7;
+var templateObject_1$J, templateObject_2$f, templateObject_3$7, templateObject_4$3;
 
 var Container$2 = styled.div(templateObject_1$K || (templateObject_1$K = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  // Safari fix\n  flex-shrink: 0;\n"], ["\n  display: flex;\n  flex-direction: column;\n  // Safari fix\n  flex-shrink: 0;\n"])));
-var AccordionContent = styled.div(templateObject_2$g || (templateObject_2$g = __makeTemplateObject(["\n  max-height: ", ";\n  transition: max-height 0.3s ease-out;\n  overflow: hidden;\n  border-color: ", ";\n  border-style: solid;\n  border-width: 1px;\n"], ["\n  max-height: ", ";\n  transition: max-height 0.3s ease-out;\n  overflow: hidden;\n  border-color: ", ";\n  border-style: solid;\n  border-width: 1px;\n"])), function (_a) {
+var AccordionContent = styled.div(templateObject_2$g || (templateObject_2$g = __makeTemplateObject(["\n  max-height: ", ";\n  transition: max-height 0.3s ease-out;\n  overflow: hidden;\n  border-color: ", ";\n  border-style: solid;\n  border-width: 1px 0;\n"], ["\n  max-height: ", ";\n  transition: max-height 0.3s ease-out;\n  overflow: hidden;\n  border-color: ", ";\n  border-style: solid;\n  border-width: 1px 0;\n"])), function (_a) {
     var isOpen = _a.isOpen, maxHeight = _a.maxHeight;
     return (isOpen ? maxHeight + "px" : 0);
 }, function (_a) {
@@ -3240,7 +3250,7 @@ var AccordionContent = styled.div(templateObject_2$g || (templateObject_2$g = __
     return (isOpen && isPushed ? "rgba(133, 133, 133, 0.1)" : "transparent");
 });
 var Accordion = function (_a) {
-    var label = _a.label, icon = _a.icon, isPushed = _a.isPushed, pushNav = _a.pushNav, _b = _a.initialOpenState, initialOpenState = _b === void 0 ? false : _b, children = _a.children, className = _a.className;
+    var label = _a.label, status = _a.status, icon = _a.icon, isPushed = _a.isPushed, pushNav = _a.pushNav, _b = _a.initialOpenState, initialOpenState = _b === void 0 ? false : _b, children = _a.children, className = _a.className, isActive = _a.isActive;
     var _c = useState(initialOpenState), isOpen = _c[0], setIsOpen = _c[1];
     var handleClick = function () {
         if (isPushed) {
@@ -3252,9 +3262,10 @@ var Accordion = function (_a) {
         }
     };
     return (React.createElement(Container$2, null,
-        React.createElement(MenuEntry, { onClick: handleClick, className: className },
+        React.createElement(MenuEntry, { onClick: handleClick, className: className, isActive: isActive, role: "button" },
             icon,
             React.createElement(LinkLabel, { isPushed: isPushed }, label),
+            status && (React.createElement(LinkStatus, { color: status.color, fontSize: "14px" }, status.text)),
             isOpen ? React.createElement(Icon$8, null) : React.createElement(Icon$7, null)),
         React.createElement(AccordionContent, { isOpen: isOpen, isPushed: isPushed, maxHeight: React.Children.count(children) * MENU_ENTRY_HEIGHT }, children)));
 };
@@ -3282,14 +3293,19 @@ var PanelBody = function (_a) {
             var iconElement = React.createElement(Icon, { width: "24px", mr: "8px" });
             var calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
             if (entry.items) {
-                return (React.createElement(Accordion, { key: entry.label, isPushed: isPushed, pushNav: pushNav, icon: iconElement, label: entry.label, initialOpenState: entry.initialOpenState, className: calloutClass }, isPushed &&
-                    entry.items.map(function (item) { return (React.createElement(MenuEntry, { key: item.href, secondary: true, isActive: item.href === location.pathname, onClick: handleClick },
-                        React.createElement(MenuLink, { href: item.href }, item.label))); })));
+                var itemsMatchIndex = entry.items.findIndex(function (item) { return item.href === location.pathname; });
+                var initialOpenState = entry.initialOpenState === true ? entry.initialOpenState : itemsMatchIndex >= 0;
+                return (React.createElement(Accordion, { key: entry.label, isPushed: isPushed, pushNav: pushNav, icon: iconElement, label: entry.label, status: entry.status, initialOpenState: initialOpenState, className: calloutClass, isActive: entry.items.some(function (item) { return item.href === location.pathname; }) }, isPushed &&
+                    entry.items.map(function (item) { return (React.createElement(MenuEntry, { disabled: entry.disabled, key: item.href, secondary: true, isActive: item.href === location.pathname, onClick: handleClick },
+                        React.createElement(MenuLink, { href: item.href },
+                            React.createElement(LinkLabel, { isPushed: isPushed }, item.label),
+                            item.status && (React.createElement(LinkStatus, { color: item.status.color, fontSize: "14px" }, item.status.text))))); })));
             }
-            return (React.createElement(MenuEntry, { key: entry.label, disabled: entry.disabled, isActive: entry.href === location.pathname, className: calloutClass },
+            return (React.createElement(MenuEntry, { disabled: entry.disabled, key: entry.label, isActive: entry.href === location.pathname, className: calloutClass },
                 React.createElement(MenuLink, { href: entry.href, onClick: handleClick },
                     iconElement,
-                    React.createElement(LinkLabel, { isPushed: isPushed }, entry.label))));
+                    React.createElement(LinkLabel, { isPushed: isPushed }, entry.label),
+                    entry.status && (React.createElement(LinkStatus, { color: entry.status.color, fontSize: "14px" }, entry.status.text)))));
         }))));
 };
 var templateObject_1$L;
@@ -3302,7 +3318,7 @@ var Container$4 = styled.div(templateObject_1$M || (templateObject_1$M = __makeT
 });
 var PriceLink = styled.a(templateObject_2$h || (templateObject_2$h = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
 styled.div(templateObject_3$8 || (templateObject_3$8 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"])), MENU_ENTRY_HEIGHT);
-var SocialEntry = styled.div(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
+var SocialEntry = styled.div(templateObject_4$4 || (templateObject_4$4 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
 var PanelFooter = function (_a) {
     var isPushed = _a.isPushed, pushNav = _a.pushNav; _a.toggleTheme; _a.isDark; var cakePriceUsd = _a.cakePriceUsd; _a.currentLang; _a.langs; _a.setLang; var priceLink = _a.priceLink;
     if (!isPushed) {
@@ -3326,7 +3342,7 @@ var PanelFooter = function (_a) {
                     React.createElement(Icon, __assign({}, iconProps))));
             })))));
 };
-var templateObject_1$M, templateObject_2$h, templateObject_3$8, templateObject_4$3;
+var templateObject_1$M, templateObject_2$h, templateObject_3$8, templateObject_4$4;
 
 var StyledPanel = styled.div(templateObject_1$N || (templateObject_1$N = __makeTemplateObject(["\n  position: fixed;\n  padding-top: ", ";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background-color: ", ";\n  width: ", ";\n  height: 100vh;\n  transition: padding-top 0.2s, width 0.2s;\n  border-right: ", ";\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n\n  ", " {\n    border-right: 2px solid rgba(133, 133, 133, 0.1);\n    width: ", ";\n  }\n"], ["\n  position: fixed;\n  padding-top: ", ";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background-color: ", ";\n  width: ", ";\n  height: 100vh;\n  transition: padding-top 0.2s, width 0.2s;\n  border-right: ", ";\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n\n  ", " {\n    border-right: 2px solid rgba(133, 133, 133, 0.1);\n    width: ", ";\n  }\n"])), function (_a) {
     var showMenu = _a.showMenu;
@@ -3603,7 +3619,7 @@ var StyledNav = styled.nav(templateObject_2$k || (templateObject_2$k = __makeTem
     return theme.nav.background;
 });
 var BodyWrapper = styled.div(templateObject_3$9 || (templateObject_3$9 = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n"], ["\n  position: relative;\n  display: flex;\n"])));
-var Inner = styled.div(templateObject_4$4 || (templateObject_4$4 = __makeTemplateObject(["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  ", " {\n    margin-left: ", ";\n  }\n  background: url(\"images/pfre/main-bk.jpg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-size: cover;\n"], ["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  ", " {\n    margin-left: ", ";\n  }\n  background: url(\"images/pfre/main-bk.jpg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-size: cover;\n"])), function (_a) {
+var Inner = styled.div(templateObject_4$5 || (templateObject_4$5 = __makeTemplateObject(["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  ", " {\n    margin-left: ", ";\n  }\n  background: transparent;\n\n"], ["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  ", " {\n    margin-left: ", ";\n  }\n  background: transparent;\n\n"])), function (_a) {
     var showMenu = _a.showMenu;
     return (showMenu ? MENU_HEIGHT + "px" : 0);
 }, function (_a) {
@@ -3667,7 +3683,7 @@ var Menu = function (_a) {
             React.createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
             React.createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };
-var templateObject_1$S, templateObject_2$k, templateObject_3$9, templateObject_4$4, templateObject_5$2;
+var templateObject_1$S, templateObject_2$k, templateObject_3$9, templateObject_4$5, templateObject_5$2;
 
 var types = {
     SUCCESS: "success",
