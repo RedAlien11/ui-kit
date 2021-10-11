@@ -42,17 +42,17 @@ const Title = styled.h1`
   
   /* Create the gradient. */
    background-image: linear-gradient(
-        45deg,
-        #f44336 16.666%, 
-        #ef5350 16.666%, 
-        #c62828 33.333%, 
-        #ff5f52 33.333%, 
-        #8e0000 50%, 
-        #ff5f52 50%, 
-        #ff1744 66.666%, 
-        #ff5131 66.666%, 
-        #9b0000 83.333%, 
-        #f05545 83.333%);
+           45deg,
+           #388E3C 16.666%,
+           #4CAF50 16.666%,
+           #4CAF50 33.333%,
+           #689F38 33.333%,
+           #8BC34A 50%,
+           #8BC34A 50%,
+           #AFB42B 66.666%,
+           #CDDC39 66.666%,
+           #8BC34A 83.333%,
+           #FFE0B2 83.333%);
   
   /* Set the background size and repeat properties. */
   background-size: 100%;
@@ -109,7 +109,7 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
       {/* <LogoIcon className="mobile-icon" /> */}
       {/* <LogoWithText className="desktop-icon" isDark={isDark} /> */}
       <Flex className="desktop-icon">
-        <Title>HAM</Title>
+        <Title>BROCCOLI</Title>
       </Flex>
     </>
   );
