@@ -3180,12 +3180,12 @@ var socials = [
     {
         label: "Telegram",
         icon: "TelegramIcon",
-        href: "https://t.me/broccolidefi1",
+        href: "https://t.me/broccolidefi",
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/oinkdefi",
+        href: "https://twitter.com/broccolidefi",
     },
 ];
 var MENU_HEIGHT = 64;
