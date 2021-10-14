@@ -83,7 +83,7 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
       })}
     </Container>
       {/* eslint-disable-next-line jsx-a11y/alt-text,jsx-a11y/control-has-associated-label */}
-      {/* <a href="https://rugdoc.io/project/broccolidefi/"><img src="/images/rugdoc-review.png" /></a> */}
+      <a href="https://rugdoc.io/project/broccoli-finance/"><img src="/images/rugdoc-review.png" /></a>
     </>
   );
 };
