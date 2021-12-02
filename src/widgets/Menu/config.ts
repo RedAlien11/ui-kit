@@ -50,7 +50,7 @@ export const links = [
       // },
       {
         label: "Github",
-        href: "https://github.com/broccolidefi/",
+        href: "https://github.com/redaliendefi/",
       },
       {
         label: "Docs",
@@ -68,12 +68,12 @@ export const socials = [
   {
     label: "Telegram",
     icon: "TelegramIcon",
-    href: "https://t.me/broccolidefi",
+    href: "https://t.me/redaliendefi",
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/broccolidefi",
+    href: "https://twitter.com/redaliendefi",
   },
 ];
 
