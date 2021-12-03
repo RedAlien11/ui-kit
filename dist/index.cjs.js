@@ -2490,7 +2490,7 @@ var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { ba
         bubblegum: "linear-gradient(139.73deg,#f7e9cf 0%,#b7b7b7 100%)",
         cardHeader: "linear-gradient(111.68deg, #F2ECF2 0%, #E8F2F6 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#388E3C", background: "#343135", backgroundAlt: "#27262c", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f5a", primaryDark: "#0098A1", inputSecondary: "#262130", tertiary: "#353547", text: "#fcf2e2", textDisabled: "#666171", textSubtle: "#d4d1c4", borderColor: "#524B63", card: "#27262c", gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#E91E63", background: "#343135", backgroundAlt: "#27262c", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f5a", primaryDark: "#0098A1", inputSecondary: "#262130", tertiary: "#353547", text: "#fcf2e2", textDisabled: "#666171", textSubtle: "#d4d1c4", borderColor: "#524B63", card: "#27262c", gradients: {
         bubblegum: "linear-gradient(139.73deg,#f48fb1 0%,#ad1457 100%)",
         cardHeader: "linear-gradient(166.77deg, #f48fb1 0%, #ad1457 100%)",
     } });
@@ -3318,9 +3318,7 @@ var PanelBody = function (_a) {
                     iconElement,
                     React__default['default'].createElement(LinkLabel, { isPushed: isPushed }, entry.label),
                     entry.status && (React__default['default'].createElement(LinkStatus, { color: entry.status.color, fontSize: "14px" }, entry.status.text)))));
-        })),
-        React__default['default'].createElement("a", { href: "https://rugdoc.io/project/redalien-finance/" },
-            React__default['default'].createElement("img", { src: "/images/rugdoc-review.png" }))));
+        }))));
 };
 var templateObject_1$L;
 
