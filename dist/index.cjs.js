@@ -3318,7 +3318,9 @@ var PanelBody = function (_a) {
                     iconElement,
                     React__default['default'].createElement(LinkLabel, { isPushed: isPushed }, entry.label),
                     entry.status && (React__default['default'].createElement(LinkStatus, { color: entry.status.color, fontSize: "14px" }, entry.status.text)))));
-        }))));
+        })),
+        React__default['default'].createElement("a", { href: "https://rugdoc.io/project/red-alien-finance/" },
+            React__default['default'].createElement("img", { src: "/images/rugdoc-review.png" }))));
 };
 var templateObject_1$L;
 
